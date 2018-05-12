@@ -157,11 +157,11 @@ var uiController = (function () {
             var html , newHtml , className;
             if(type === 'exp'){
                 className = '.expenses__list';
-                html ='<div class="item clearfix" id="exp-%id%"><div class="item__description">%desc%</div><div class="right clearfix"><div class="item__value">-%val%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+                html ='<div class="item clearfix" id="exp-%id%"><div class="item__description">%desc%</div><div class="right clearfix"><div class="item__value">-%val%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i>X</button></div></div></div>';
             }
             else if(type === 'inc'){
                 className = '.income__list';
-                html ='<div class="item clearfix" id="inc-%id%"><div class="item__description">%desc%</div><div class="right clearfix"><div class="item__value">+%val%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
+                html ='<div class="item clearfix" id="inc-%id%"><div class="item__description">%desc%</div><div class="right clearfix"><div class="item__value">+%val%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i>X</button></div></div></div>';
             }
 
             newHtml = html.replace("%id%",newItemObj.Id);
